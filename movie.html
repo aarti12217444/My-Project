@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPRT Movie</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+        .square-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        
+        .square {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out; /* Added transition for smooth effect */
+            position: relative;
+        }
+
+        /* Zoom effect */
+        .square:hover {
+            transform: scale(1.1); /* Zoom in by 10% */
+        }
+
+        .square-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Ensure the background is behind the content */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header .logo img{
+            height: 100px;
+            width: auto;
+            border-radius: 50px;
+        }
+        
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2{
+            color: #020202;
+        }
+        .square img{
+            width: 100%;
+            height: auto;
+            display: block;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="AB.png" alt="BPRT Movie Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+        <h1>AB MOVIES HUB</h1>
+    </header>
+    <section class="container">
+        <!-- <h2>Welcome to Our Website</h2> -->
+        <div class="square-container">
+            <!-- Movie cards go here -->
+        </div>
+    </section>
+
+
+    <section class="container">
+        <!-- <h2>Welcome to Our Website</h2> -->
+        
+        <div class="square-container">
+
+            <div class="square">
+                <div class="square-background" style="background-image: url('image1.jpg');"></div>
+                <img src="aladdin.jpg" alt="Feature 1">
+                <h3><a href="https://www.youtube.com/watch?v=X6jg5c3ieBM&t=7s">Aladdin(2019)</a></h3>
+                <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	
+                    Will Smith,
+                    Mena Massoud,
+                    Naomi Scott,
+                    Marwan Kenzari,
+                    Navid Negahban,
+                    Nasim Pedrad,
+                    Billy Magnussen<br><br>Directer: Guy Ritchie<br><br>Timing: 128 minutes</p>
+                    
+            </div>
+            <div class="square">
+                <div class="square-background" style="background-image: url('image2.jpg');"></div>
+                <img src="avtar.jpg" alt="Feature 2">
+                <h3><a href="https://www.youtube.com/watch?v=RNj2cH5yjNA">Avatar(2009)</a></h3>
+                <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	
+                    Sam Worthington,
+                    Zoe Saldana,
+                    Stephen Lang,
+                    Michelle Rodriguez,
+                    Sigourney Weaver<br><br>Directer: James Cameron<br><br>Timing: 162 minutes</p>
+            </div>
+            <div class="square">
+                <div class="square-background" style="background-image: url('image3.jpg');"></div>
+                <img src="Avengers.jpg" alt="Feature 3">
+                <h3><a href="https://www.youtube.com/watch?v=klhZeA61TWw">Avenger(2012)</a></h3>
+                <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: Robert Downey Jr.,Chris Evans,Mark Ruffalo,Chris Hemsworth,Scarlett Johansson<br><br>Directer: Joss Whedon<br><br>Timing: 143 minutes </p>
+            </div>
+            <div class="square">
+                <div class="square-background" style="background-image: url('image3.jpg');"></div>
+                <img src="captain marvel.jpg" alt="Feature 3">
+                <h3><a href="https://www.youtube.com/watch?v=8fzZwQKVRWM">Captain Marvel(2019)</a></h3>
+                <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast:	
+                    Brie Larson,
+                    Samuel L. Jackson,
+                    Ben Mendelsohn,
+                    Djimon Hounsou,
+                    Lee Pace,
+                    Lashana Lynch,
+                    Gemma Chan,
+                    Annette Bening,
+                    Clark Gregg,
+                    Jude Law<br><br>Directer: Anna Boden,
+                    Ryan Fleck<br><br>Timing: 124 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="Cinderella_(2021_film).jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=AdAcNaZRr8k">Cinderella(2021)</a></h3>
+            <p>Movie Rating: ⭐⭐<br><br>Cast:	
+                Camila Cabello,
+                Nicholas Galitzine,
+                Idina Menzel,
+                Minnie Driver,
+                Billy Porter,
+                Pierce Brosnan<br><br>Directer: Kay Cannon<br><br>Timing: 114 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="ddlj.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=IbwjDTOvwG8">Dilwale Dulhania Le Jayenge(1995)</a></h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	Shah Rukh Khan,
+                Kajol<br><br>Directer: Aditya Chopra<br><br>Timing: 189 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="dil bechara.avif" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=DsDac6rVPJk">Dil Bechara(2020)</a></h3>
+            <p>Movie rateing: ⭐⭐⭐⭐<br><br>Cast: 	
+                Sushant Singh Rajput,
+                Sanjana Sanghi<br><br>Directer: Mukesh Chhabra<br><br>Timing: 101 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="Harry potter.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=80SkI3tzXkU">Harry potter(2001)</a></h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	
+                Daniel Radcliffe,
+                Rupert Grint,
+                Emma Watson<br><br>Directer: Chris Columbus,
+                Alfonso Cuarón,
+                Mike Newell,
+                David Yates<br><br>Timing: 1,179 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="hichki.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=D625towXRe4">Hichki(2018)</a></h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	Rani Mukerji<br><br>Directer: Siddharth P. Malhotra<br><br>Timing: 116 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="heeramandi.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=M8xd1kyGTQQ">Heeramandi(2024)[season 1]</a></h3>
+            <p>Movie rating: ⭐⭐⭐<br><br>Cast: 	
+                Manisha Koirala,
+                Sonakshi Sinha,
+                Aditi Rao Hydari,
+                Richa Chadha,
+                Sanjeeda Sheikh,
+                Sharmin Segal Mehta,
+                Taha Shah Badussha<br><br>Directer: Sanjay Leela Bhansali<br><br>No. of episodes:	8</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="jocker.avif" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=Ha6PHjcg3uA&t=4294s">Joker(2019)</a></h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	
+                Joaquin Phoenix,
+                Robert De Niro,
+                Zazie Beetz,
+                Frances Conroy<br><br>Directer: Todd Phillips<br><br>Timing: 122 minutes </p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="justiceleague.jpg" alt="Feature 3">
+            <h3>Zack Snyder's Justice League(2021)</h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	
+                Ben Affleck,
+                Henry Cavill,
+                Amy Adams,
+                Gal Gadot,
+                Ezra Miller,
+                Jason Momoa,
+                Ray Fisher,
+                Jeremy Irons,
+                Diane Lane,
+                Connie Nielsen,
+                J. K. Simmons<br><br>Directer: 	Zack Snyder
+                Joss Whedon <br><br>Timing: 120 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="lagaan.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=vAmsPNCRKro">Lagaan(2002)</a></h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: 	
+                Aamir Khan,
+                Gracy Singhn
+                Rachel Shelleyn
+                Paul Blackthorne<br><br>Directer: Ashutosh Gowariker<br><br>Timing: 224 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="Laapataa_Ladies_poster.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=vh2BgGrc7nA">Laapataa Ladies(2024)</a></h3>
+            <p>Movie Rating: ⭐⭐⭐⭐⭐<br><br>Cast:	
+                Nitanshi Goel,
+                Sparsh Shrivastava,
+                Pratibha Ranta,
+                Abhay Dubey,
+                Chhaya Kadam,
+                Ravi Kishan<br><br>Directer: Kiran Rao<br><br>Timing: 124 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="monster house.jpg" alt="Feature 3">
+            <h3>Monster House(2006)</h3>
+            <p>Movie Rting: ⭐⭐⭐⭐<br><br>Cast: 	
+                Steve Buscemi,
+                Nick Cannon,
+                Maggie Gyllenhaal,
+                Kevin James,
+                Jason Lee,
+                Catherine O'Hara,
+                Kathleen Turner,
+                Fred Willard<br><br>Directer:Gil Kenan<br><br>Timing: 91 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="mr india.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=0uWsE0-WqzU">Mr. India(1987)</a></h3>
+            <p>Movie Rating:⭐⭐⭐⭐<br><br>Cast:Anil Kapoor,Sridevi,Amrish Puri<br><br>Directer:Shekhar Kapur<br><br>Timing: 179 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="shreyas-raut-avatar-2.jpg" alt="Feature 3">
+            <h3>Avatar(The way of water)(2022)</h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: Sam Worthington,Zoe Saldana,Sigourney Weaver,Stephen Lang,Kate Winslet<br><br>Directer: James Cameron<br><br>Timing: 192 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="southland tales.jpg" alt="Feature 3">
+            <h3>Southland Tales(2007)</h3>
+            <p>Movie Rating: ⭐⭐⭐<br><br>Cast:Carlos Amezcua,Curtis Armstrong,Robert Benz,Nora Dunn<br><br>Directer: Richard Kelly<br><br>Timing: 144 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="special 26.jpg" alt="Feature 3">
+            <h3>Special 26(2013)</h3>
+            <p>Movie Rating: ⭐⭐⭐⭐<br><br>Cast: Akshay Kumar,Anupam Kher,Manoj Bajpayee,Kajal Aggarwal<br><br>Directer: Neeraj Pandey<br><br>Timing: 144 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="bajrangi-bhaijaan.jpg" alt="Feature 3">
+            <h3>Bajrangi Bhaijaan(2015)</h3>
+            <p>Movie rating: ⭐⭐⭐⭐<br><br>Cast: Salman Khan,Kareena Kapoor,Harshaali Malhotra,Nawazuddin Siddiqui,Sharat SaxenaOm Puri<br><br>Directer: Kabir Khan<br><br>Timing:163 minutes</p>
+        </div>
+        <div class="square">
+            <div class="square-background" style="background-image: url('image3.jpg');"></div>
+            <img src="chhichhore.jpg" alt="Feature 3">
+            <h3><a href="https://www.youtube.com/watch?v=cbTFRQSXs9w">Chhichhore(2019)</a></h3>
+            <p>Movi Rating: ⭐⭐⭐⭐⭐<br><br>Cast: Sushant Singh Rajput,Shraddha Kapoor,Varun Sharma,Tahir Raj Bhasin,Naveen Polishetty,Tushar Pandey,Saharsh Kumar ShuklaPrateik Patil Babbar<br><br>Director: Nitesh Tiwari<br><br>Timing: 146 minutes</p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
